@@ -1,2 +1,4 @@
 angular.module("primerProyecto")
-.controller()
+.controller('homeCtrl', function($scope) {
+
+});

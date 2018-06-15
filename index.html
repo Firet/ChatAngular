@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Proyecto Angular</title>
-
-	<script type="text/javascript" scr="lib/angular.min.js"></script>
-	<script type="text/javascript" scr="js/app.js"></script>
-
-	<!-- CONTROLLERS -->
-	<script type="text/javascript" scr="js/controllers/homeCtrl.js"></script>
-</head>
-<body ng-app="primerProyecto">
-	
-
-</body>
+	<head>
+		<title>Proyecto Angular</title>
+		<script src="lib/angular.min.js"></script>
+		<script type="text/javascript" src="lib/angular-ui-router.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<!-- CONTROLLERS -->
+		<script type="text/javascript" src="js/controllers/homeCtrl.js"></script>
+	</head>
+	<body ng-app="primerProyecto">
+		<div ui-view></div>
+	</body>
 </html>

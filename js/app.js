@@ -1,10 +1,8 @@
-
-
-angular.module("primerProyecto", [])
-.run(() => {
-
+angular.module("primerProyecto", ['ui.router'])
+.run(function($state){
+	console.log("angular is running");
 })
-.config(($stateProvider, $urlRouterProvider) => {
+.config(function($stateProvider, $urlRouterProvider){
 	$stateProvider
 		.state("home", {
 			url: "/home",
