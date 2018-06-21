@@ -1,13 +1,16 @@
 angular.module("primerProyecto")
-.controller('homeCtrl', function($scope) {
-    var nombre = "joa";
+.controller('homeCtrl', function($scope, $http) {
+
     let contactos = [{
-        nombre: "damian"
+      name: "damian",
+      avatar: "https://vignette.wikia.nocookie.net/dragonball/images/a/a9/Vegeta.png/revision/latest?cb=20180204191902&path-prefix=es"
     },{
-        nombre: nombre
+      name: "joa",
+      avatar: "https://vignette.wikia.nocookie.net/dragonball/images/a/a9/Vegeta.png/revision/latest?cb=20180204191902&path-prefix=es"
     },{
-        nombre: "pepe"
-    }];
+      name: "pepe",
+      avatar: "https://vignette.wikia.nocookie.net/dragonball/images/a/a9/Vegeta.png/revision/latest?cb=20180204191902&path-prefix=es"
+    }]
     
     $scope.usuarios = contactos;
     $scope.mostrarNombre = function(index){
