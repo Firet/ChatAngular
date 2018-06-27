@@ -1,0 +1,39 @@
+direccion ip clase c: 192.168.1.1
+Clase A: 10.0.0.0 a 10.255.255.255 (8 bits red, 24 bits hosts).
+Clase B: 172.16.0.0 a 172.31.255.255 (16 bits red, 16 bits hosts).
+Clase C: 192.168.0.0 a 192.168.255.255 (24 bits red, 8 bits hosts).
+
+            Abasto
+            INTERNET
+               |
+            ip publica 200.135.123.1
+               |
+------------ROUTER------------ puertos - def: todos cerrados. 8080   
+            RED LOCAL
+   192.168.0.2:8080   192.168.0.3
+        Damian      Joa
+
+
+            Casa
+            INTERNET
+               |
+               |
+------------ROUTER------------    
+            RED LOCAL
+   192.168.2.20   192.168.21.4
+        Damian      Joa
+
+
+DCHP - protocolo de asignacion automatica de ip
+
+PUERTOS DE RED 0 - 65500
+
+192.168.0.3:8080 <- SERVIDOR WEB (brindar acceso al proyecto web)
+192.168.0.3:1433 <- MS-SQL SERVER
+192.168.0.3:3000 <- SERVIDOR NODEJS
+
+
+Damian 192.168.0.2
+127.0.0.1 = local host
+
+
