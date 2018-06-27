@@ -11,3 +11,5 @@ angular.module("primerProyecto")
       console.log(error)
     });
 });
+
+//TODO: INVESTIGAR MODULO $STATE PARA PASAR DATOS A LA SIGUIENTE PANTALLA/CONTROLADOR

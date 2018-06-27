@@ -8,6 +8,11 @@ angular.module("primerProyecto", ['ui.router'])
 			url: "/home",
 			templateUrl: "templates/home.html",
 			controller: "homeCtrl"
+		})
+		.state("profile", {
+			url: "/profile",
+			templateUrl: "templates/profile.html",
+			controller: "profileCtrl"
 		});
 	$urlRouterProvider.otherwise("/home");
 });
