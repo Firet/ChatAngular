@@ -12,7 +12,14 @@ angular.module("primerProyecto", ['ui.router'])
 		.state("profile", {
 			url: "/profile",
 			templateUrl: "templates/profile.html",
-			controller: "profileCtrl"
+			controller: "profileCtrl",
+			params: {
+				user: {
+					name:{
+						first: "example"
+					}
+				}
+			}
 		});
 	$urlRouterProvider.otherwise("/home");
 });

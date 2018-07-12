@@ -1,7 +1,7 @@
 angular.module("primerProyecto")
 .controller('homeCtrl', function($scope, $state, $http, ApiService) {
-    $scope.mostrarNombre = function(index){
-        alert($scope.usuarios[index].name.first);
+    $scope.goToProfile = function(index){
+        $state.go('profile', { user: $scope.usuarios[index] });
     }
     $scope.usuarios = [];
 
@@ -11,5 +11,3 @@ angular.module("primerProyecto")
       console.log(error)
     });
 });
-
-//TODO: INVESTIGAR MODULO $STATE PARA PASAR DATOS A LA SIGUIENTE PANTALLA/CONTROLADOR
