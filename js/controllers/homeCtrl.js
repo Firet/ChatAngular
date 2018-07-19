@@ -7,6 +7,7 @@ angular.module("primerProyecto")
 
     ApiService.getUsers().then((data) => {
       $scope.usuarios=data;
+      console.log(data)
     }, (error) => {
       console.log(error)
     });

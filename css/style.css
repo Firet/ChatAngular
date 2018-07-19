@@ -1,6 +1,6 @@
 /* home */
 .card {   
-    width: 80%;
+    width: 100%;
     margin: 2% auto; 
     border-radius: 11px;    
 }
@@ -86,4 +86,17 @@
     margin: 0 auto;    
 }
 
-/* fin view profile */
+/* fin profile */
+
+/* details */
+.detailsCircle {
+    background-color: blue;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+
+/* fin details */  

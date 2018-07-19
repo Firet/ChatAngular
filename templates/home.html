@@ -1,18 +1,19 @@
-<div class="card" style="width: 50%; height: 100%;">
-	<ul class="list-group list-group-flush">
-		<li class="list-group-item" ng-click="goToProfile($index)" style="height: 80px; padding: 0; margin: 0; border: 0;" ng-repeat="usuario in usuarios">
-			<table class="table" style="margin: 0; height: 100%;">
-				<tr>
-					<th style="width: 80px;">
-							<div class="thumbnail">
-								<img ng-src="{{usuario.picture.thumbnail}}">
-							</div>
-					</th>
-					<th style="padding: 0; vertical-align: middle; ">
-						<p style="margin: 0;">{{usuario.name.first}} {{usuario.name.last}}</p>
-					</th>
-				</tr>
-			</table>
-		</li>
-	</ul>
-</div>
+
+			<div class="card" style="height: 100%;">
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item" ng-click="goToProfile($index)" style="height: 80px; padding: 0; margin: 0; border: 0;" ng-repeat="usuario in usuarios">
+						<table class="table" style="margin: 0; height: 100%;">
+							<tr>
+								<th style="width: 80px;">
+										<div class="thumbnail">
+											<img ng-src="{{usuario.picture.thumbnail}}">
+										</div>
+								</th>
+								<th style="padding: 0; vertical-align: middle; ">
+									<p style="margin: 0;">{{usuario.name.first}} {{usuario.name.last}}</p>
+								</th>
+							</tr>
+						</table>
+					</li>
+				</ul>
+			</div>			

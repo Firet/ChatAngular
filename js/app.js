@@ -4,10 +4,19 @@ angular.module("primerProyecto", ['ui.router'])
 })
 .config(function($stateProvider, $urlRouterProvider){
 	$stateProvider
-		.state("home", {
-			url: "/home",
-			templateUrl: "templates/home.html",
-			controller: "homeCtrl"
+		.state("app", {
+			url: "/app",
+			templateUrl: "templates/app.html",
+			view:{
+				"home":{
+					templateUrl: "templates/home.html",
+					controller: "homeCtrl"
+				},
+				"details":{
+					templateUrl: "templates/details.html",
+					controller: "detailsCtrl"
+				}
+			}
 		})
 		.state("profile", {
 			url: "/profile",
@@ -21,5 +30,5 @@ angular.module("primerProyecto", ['ui.router'])
 				}
 			}
 		});
-	$urlRouterProvider.otherwise("/home");
+	$urlRouterProvider.otherwise("/app");
 });
