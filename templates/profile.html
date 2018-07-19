@@ -1,6 +1,20 @@
-<div>
-    <h1>profile</h1>
-    <h3>{{user.name.first}}</h3>
+<div class="profile">
+    <div class="barraProfile">
+        <h1>Profile</h1>
+        <!-- <i class="fas fa-ellipsis-v"></i> -->
+    </div> 
+    <div class="fotoMediana">
+        <img ng-src="{{user.picture.large}}">
+    </div>
+    <div class="infoUsuario">
+        <div class="infoName">
+            <h3>{{user.name.first}} {{user.name.last}}</h3>
+        </div>
+        <div class="infoLocation">
+            <h2>from  {{user.location.city}}, {{user.location.state}}</h2>
+        </div>
+        <!-- <p>User since {{user.registered.date}}</p> -->
+    </div>
 </div>
 
 

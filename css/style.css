@@ -1,3 +1,12 @@
+/* home */
+.card {   
+    width: 80%;
+    margin: 2% auto; 
+    border-radius: 11px;    
+}
+.card ul li {
+    background-color: rgba(7, 58, 226, 0.01);
+}
 .containerCustom {
     width: 50px;
     height: 50px;
@@ -29,3 +38,52 @@
     width: 100%;
     height: auto;
   }
+/* fin home */
+/* profile ///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.profile {
+    background-color: rgba(7, 58, 226, 0.747);   
+    width: 80%;
+    margin: 2% auto; 
+    border-radius: 11px;
+}
+.barraProfile {
+    flex-flow: row wrap;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+.barraProfile h1 {
+    color: #80808052;
+    margin: 0 auto;     
+}
+.barraProfile i {
+    font-size: 1.5em;
+    margin-right: 10%;    
+}
+.fotoMediana {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 4%;
+}
+.fotoMediana img {
+    width: 15%;
+    height: 15%;
+    overflow: hidden;
+    border-radius: 50%;    
+    margin: 0 auto;
+  }
+.infoUsuario {
+    display: flex;
+    justify-content: space-between;
+}
+.infoName {
+    margin: 0 auto;
+}
+.infoLocation {
+    margin: 0 auto;    
+}
+
+/* fin view profile */
