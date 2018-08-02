@@ -6,17 +6,8 @@ angular.module("primerProyecto", ['ui.router'])
 	$stateProvider
 		.state("app", {
 			url: "/app",
-			templateUrl: "templates/app.html",
-			view:{
-				"home":{
-					templateUrl: "templates/home.html",
-					controller: "homeCtrl"
-				},
-				"details":{
-					templateUrl: "templates/details.html",
-					controller: "detailsCtrl"
-				}
-			}
+			templateUrl: "templates/home.html",
+			controller: "homeCtrl",
 		})
 		.state("profile", {
 			url: "/profile",
